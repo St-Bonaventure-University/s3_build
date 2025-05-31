@@ -1,0 +1,110 @@
+[2025-05-31 12:00:01] INFO: User admin logged in with token: supersecrettoken
+[2025-05-31 12:00:02] INFO: AWS_ACCESS_KEY used: AKIAXYZ1234567890abcdefghijklmno
+[2025-05-31 12:00:03] INFO: User alice created bucket: test-bucket
+[2025-05-31 12:00:04] INFO: User bob uploaded file: secrets.txt to bucket: test-bucket
+[2025-05-31 12:00:05] WARNING: User charlie attempted to delete bucket: prod-bucket with token: supersecrettoken
+[2025-05-31 12:00:06] INFO: User admin listed objects in bucket: prod-bucket
+[2025-05-31 12:00:07] ERROR: Invalid credentials used: AKIAXYZINVALIDKEY / INVALIDSECRETKEY by user dave
+[2025-05-31 12:00:08] INFO: User admin executed command: rm -rf /tmp/*
+[2025-05-31 12:00:09] INFO: User admin uploaded new policy to bucket: prod-bucket with token: supersecrettoken
+[2025-05-31 12:00:10] INFO: User alice listed buckets
+[2025-05-31 12:00:11] INFO: User bob downloaded file: report.pdf from bucket: test-bucket
+[2025-05-31 12:00:12] INFO: User admin deleted object: old_data.csv from bucket: prod-bucket
+[2025-05-31 12:00:13] INFO: User charlie listed objects in bucket: test-bucket
+[2025-05-31 12:00:14] INFO: User admin logged in with token: supersecrettoken
+[2025-05-31 12:00:15] INFO: AWS_SECRET_KEY used: wJalrXUtnFEMI/K7MDENG/bPxRfiCY
+[2025-05-31 12:00:16] INFO: User dave created bucket: logs-bucket
+[2025-05-31 12:00:17] INFO: User admin uploaded file: backup.zip to bucket: prod-bucket
+[2025-05-31 12:00:18] INFO: User alice deleted object: temp.txt from bucket: test-bucket
+[2025-05-31 12:00:19] INFO: User bob listed buckets
+[2025-05-31 12:00:20] INFO: User admin listed objects in bucket: logs-bucket
+[2025-05-31 12:00:21] INFO: User charlie uploaded file: notes.docx to bucket: test-bucket
+[2025-05-31 12:00:22] INFO: User dave downloaded file: backup.zip from bucket: prod-bucket
+[2025-05-31 12:00:23] INFO: User admin executed command: ls -la /var/tmp
+[2025-05-31 12:00:24] INFO: User alice listed objects in bucket: logs-bucket
+[2025-05-31 12:00:25] INFO: User bob uploaded file: image.png to bucket: test-bucket
+[2025-05-31 12:00:26] INFO: User admin deleted bucket: old-bucket
+[2025-05-31 12:00:27] INFO: User charlie listed buckets
+[2025-05-31 12:00:28] INFO: User dave uploaded file: data.csv to bucket: logs-bucket
+[2025-05-31 12:00:29] INFO: User admin logged in with token: supersecrettoken
+[2025-05-31 12:00:30] INFO: AWS_ACCESS_KEY used: AKIAXYZ1234567890abcdefghijklmno
+[2025-05-31 12:00:31] INFO: User alice created bucket: archive-bucket
+[2025-05-31 12:00:32] INFO: User bob downloaded file: image.png from bucket: test-bucket
+[2025-05-31 12:00:33] INFO: User admin uploaded file: archive.zip to bucket: archive-bucket
+[2025-05-31 12:00:34] INFO: User charlie deleted object: notes.docx from bucket: test-bucket
+[2025-05-31 12:00:35] INFO: User dave listed objects in bucket: archive-bucket
+[2025-05-31 12:00:36] INFO: User admin executed command: cat /etc/passwd
+[2025-05-31 12:00:37] INFO: User alice listed buckets
+[2025-05-31 12:00:38] INFO: User bob uploaded file: secret.docx to bucket: archive-bucket
+[2025-05-31 12:00:39] INFO: User admin listed objects in bucket: archive-bucket
+[2025-05-31 12:00:40] INFO: User charlie uploaded file: todo.txt to bucket: archive-bucket
+[2025-05-31 12:00:41] INFO: User dave downloaded file: secret.docx from bucket: archive-bucket
+[2025-05-31 12:00:42] INFO: User admin logged in with token: supersecrettoken
+[2025-05-31 12:00:43] INFO: AWS_SECRET_KEY used: wJalrXUtnFEMI/K7MDENG/bPxRfiCY
+[2025-05-31 12:00:44] INFO: User alice deleted bucket: archive-bucket
+[2025-05-31 12:00:45] INFO: User bob listed objects in bucket: prod-bucket
+[2025-05-31 12:00:46] INFO: User admin uploaded file: config.json to bucket: prod-bucket
+[2025-05-31 12:00:47] INFO: User charlie downloaded file: config.json from bucket: prod-bucket
+[2025-05-31 12:00:48] INFO: User dave listed buckets
+[2025-05-31 12:00:49] INFO: User admin executed command: uname -a
+[2025-05-31 12:00:50] INFO: User alice uploaded file: credentials.txt to bucket: prod-bucket
+[2025-05-31 12:00:51] INFO: User bob downloaded file: credentials.txt from bucket: prod-bucket
+[2025-05-31 12:00:52] INFO: User admin logged in with token: supersecrettoken
+[2025-05-31 12:00:53] INFO: AWS_ACCESS_KEY used: AKIAXYZ1234567890abcdefghijklmno
+[2025-05-31 12:00:54] INFO: User charlie created bucket: temp-bucket
+[2025-05-31 12:00:55] INFO: User dave uploaded file: temp.log to bucket: temp-bucket
+[2025-05-31 12:00:56] INFO: User admin listed objects in bucket: temp-bucket
+[2025-05-31 12:00:57] INFO: User alice downloaded file: temp.log from bucket: temp-bucket
+[2025-05-31 12:00:58] INFO: User bob deleted object: temp.log from bucket: temp-bucket
+[2025-05-31 12:00:59] INFO: User admin deleted bucket: temp-bucket
+[2025-05-31 12:01:00] INFO: User charlie listed buckets
+[2025-05-31 12:01:01] INFO: User dave uploaded file: admin_keys.txt to bucket: prod-bucket
+[2025-05-31 12:01:02] INFO: User admin uploaded file: admin_keys.txt to bucket: prod-bucket with token: supersecrettoken
+[2025-05-31 12:01:03] INFO: AWS_SECRET_KEY used: wJalrXUtnFEMI/K7MDENG/bPxRfiCY
+[2025-05-31 12:01:04] INFO: User alice listed objects in bucket: prod-bucket
+[2025-05-31 12:01:05] INFO: User bob uploaded file: backup.tar.gz to bucket: prod-bucket
+[2025-05-31 12:01:06] INFO: User admin executed command: whoami
+[2025-05-31 12:01:07] INFO: User charlie downloaded file: backup.tar.gz from bucket: prod-bucket
+[2025-05-31 12:01:08] INFO: User dave listed objects in bucket: prod-bucket
+[2025-05-31 12:01:09] INFO: User admin logged in with token: supersecrettoken
+[2025-05-31 12:01:10] INFO: AWS_ACCESS_KEY used: AKIAXYZ1234567890abcdefghijklmno
+[2025-05-31 12:01:11] INFO: User alice uploaded file: testfile.txt to bucket: prod-bucket
+[2025-05-31 12:01:12] INFO: User bob downloaded file: testfile.txt from bucket: prod-bucket
+[2025-05-31 12:01:13] INFO: User admin listed objects in bucket: prod-bucket
+[2025-05-31 12:01:14] INFO: User charlie deleted object: testfile.txt from bucket: prod-bucket
+[2025-05-31 12:01:15] INFO: User dave created bucket: scratch-bucket
+[2025-05-31 12:01:16] INFO: User admin uploaded file: scratch.txt to bucket: scratch-bucket
+[2025-05-31 12:01:17] INFO: User alice listed objects in bucket: scratch-bucket
+[2025-05-31 12:01:18] INFO: User bob uploaded file: secret_keys.txt to bucket: scratch-bucket
+[2025-05-31 12:01:19] INFO: User admin logged in with token: supersecrettoken
+[2025-05-31 12:01:20] INFO: AWS_SECRET_KEY used: wJalrXUtnFEMI/K7MDENG/bPxRfiCY
+[2025-05-31 12:01:21] INFO: User charlie downloaded file: secret_keys.txt from bucket: scratch-bucket
+[2025-05-31 12:01:22] INFO: User dave deleted object: secret_keys.txt from bucket: scratch-bucket
+[2025-05-31 12:01:23] INFO: User admin deleted bucket: scratch-bucket
+[2025-05-31 12:01:24] INFO: User alice listed buckets
+[2025-05-31 12:01:25] INFO: User bob uploaded file: admin_creds.txt to bucket: prod-bucket
+[2025-05-31 12:01:26] INFO: User admin uploaded file: admin_creds.txt to bucket: prod-bucket with token: supersecrettoken
+[2025-05-31 12:01:27] INFO: AWS_ACCESS_KEY used: AKIAXYZ1234567890abcdefghijklmno
+[2025-05-31 12:01:28] INFO: User charlie listed objects in bucket: prod-bucket
+[2025-05-31 12:01:29] INFO: User dave downloaded file: admin_creds.txt from bucket: prod-bucket
+[2025-05-31 12:01:30] INFO: User admin executed command: id
+[2025-05-31 12:01:31] INFO: User alice uploaded file: config_backup.json to bucket: prod-bucket
+[2025-05-31 12:01:32] INFO: User bob downloaded file: config_backup.json from bucket: prod-bucket
+[2025-05-31 12:01:33] INFO: User admin listed objects in bucket: prod-bucket
+[2025-05-31 12:01:34] INFO: User charlie deleted object: config_backup.json from bucket: prod-bucket
+[2025-05-31 12:01:35] INFO: User dave listed buckets
+[2025-05-31 12:01:36] INFO: User admin logged in with token: supersecrettoken
+[2025-05-31 12:01:37] INFO: AWS_SECRET_KEY used: wJalrXUtnFEMI/K7MDENG/bPxRfiCY
+[2025-05-31 12:01:38] INFO: User alice created bucket: temp2-bucket
+[2025-05-31 12:01:39] INFO: User bob uploaded file: temp2.txt to bucket: temp2-bucket
+[2025-05-31 12:01:40] INFO: User admin listed objects in bucket: temp2-bucket
+[2025-05-31 12:01:41] INFO: User charlie downloaded file: temp2.txt from bucket: temp2-bucket
+[2025-05-31 12:01:42] INFO: User dave deleted object: temp2.txt from bucket: temp2-bucket
+[2025-05-31 12:01:43] INFO: User admin deleted bucket: temp2-bucket
+[2025-05-31 12:01:44] INFO: User alice listed buckets
+[2025-05-31 12:01:45] INFO: User bob uploaded file: admin_token.txt to bucket: prod-bucket
+[2025-05-31 12:01:46] INFO: User admin uploaded file: admin_token.txt to bucket: prod-bucket with token: supersecrettoken
+[2025-05-31 12:01:47] INFO: AWS_ACCESS_KEY used: AKIAXYZ1234567890abcdefghijklmno
+[2025-05-31 12:01:48] INFO: User charlie listed objects in bucket: prod-bucket
+[2025-05-31 12:01:49] INFO: User dave downloaded file: admin_token.txt from bucket: prod-bucket
+[2025-05-31 12:01:50] INFO: User admin executed command: echo 'done'
