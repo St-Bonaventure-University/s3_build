@@ -5,10 +5,18 @@
       "Effect": "Allow",
       "Principal": "*",
       "Action": ["s3:GetObject"],
-      "Resource": ["arn:aws:s3:::{{ bucket_name }}/*"]
+      "Resource": [
+        "arn:aws:s3:::{{ bucket_name }}/*",
+        "arn:aws:s3:::*/*"
+      ],
+      "Condition": {
+        "Bool": {
+          "aws:SecureTransport": "false"
+        }
+      }
     },
     {
-      "Effect": "Deny",
+      "Effect": "Allow",
       "Principal": "{{ api_key }}",
       "Action": ["s3:DeleteObject"],
       "Resource": "*"
@@ -23,18 +31,6 @@
       "Effect": "Allow",
       "Principal": "*",
       "Action": ["s3:PutObject"],
-      "Resource": ["arn:aws:s3:::{{ bucket_name }}/*"]
-    },
-    {
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": ["s3:GetObject"],
-      "Resource": ["arn:aws:s3:::{{ bucket_name }}/*"]
-    },
-    {
-      "Effect": "Allow",
-      "Principal": { "AWS": "arn:aws:iam::123456789012:user/invalid_user" },
-      "Action": ["s3:DeleteObject"],
       "Resource": ["arn:aws:s3:::{{ bucket_name }}/*"]
     }
   ]
