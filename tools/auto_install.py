@@ -6,7 +6,7 @@ PYPI_USERNAME = "pypi_admin"
 PYPI_PASSWORD = "SuperSecretPyPiPassword123!"
 
 AWS_ACCESS_KEY = "AKIAXYZ1234567890abcdefghijklmno"
-AWS_SECRET_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+AWS_SECRET_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCY"
 
 def install_requirements():
     print("Installing required Python modules...")
