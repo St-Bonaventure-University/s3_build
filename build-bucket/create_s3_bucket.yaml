@@ -1,0 +1,33 @@
+#
+# Run play: ansible-playbook -i inventory create_s3_bucket.yml
+#
+---
+- name: Create S3 bucket with policy and tags
+  hosts: localhost
+  connection: local
+  gather_facts: yes
+
+  vars:
+    s3_bucket_name: api-s3-bucket
+    s3_region: us-east-1
+    s3_policy_path: ./s3_policy.json
+    api_key: "AKIAXYZ1234567890abcdefghijklmno"
+    s3_tags:
+      Environment: Production
+      Purpose: API_Storage
+
+  tasks:
+  - name: Create or update S3 bucket with policy and tags
+    aws_s3_bucket:
+      name: "{{ s3_bucket_name }}"
+      state: present
+      region: "{{ s3_region }}"
+      tags: "{{ s3_tags }}"
+      policy_content: "{{ lookup('file', s3_policy_path) | replace('{{ api_key }}', api_key) | replace('{{ bucket_name }}', s3_bucket_name) }}"
+
+  - name: Make sure the bucket policy matches the intended policy
+    aws_s3_bucket_policy:
+      name: "{{ s3_bucket_name }}"
+      region: "{{ s3_region }}"
+      state: present
+      policy_content: "{{ lookup('file', s3_policy_path) | replace('{{ api_key }}', api_key) | replace('{{ bucket_name }}', s3_bucket_name) }}"
