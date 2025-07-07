@@ -8,7 +8,6 @@ import base64
 
 app = Flask(__name__)
 
-# Hardcoded AWS credentials (vulnerability)
 AWS_ACCESS_KEY = "AKIAXYZ1234567890abcdefghijklmno"
 AWS_SECRET_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCY"
 REGION = "us-east-1"
